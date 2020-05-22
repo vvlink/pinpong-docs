@@ -1,0 +1,88 @@
+============
+示例程序
+============
+
+blink.py代码样例
+===========================================
+
+.. code-block:: python
+
+
+    import sys
+    import time
+    from pinpong.pinpong import *
+
+    LED_PIN = 13
+
+    board = PinPong("leonardo","com5")
+    board.connect()
+
+    board.pin_mode(LED_PIN, OUTPUT)
+    while True:
+        board.write_digital(LED_PIN, 0)
+        time.sleep(1)
+
+        board.write_digital(LED_PIN, 90)
+        time.sleep(1)
+
+
+button.py代码样例
+===========================================
+
+.. code-block:: python
+
+
+    import sys
+    import time
+    from pinpong.pinpong import *
+
+    BUTTON_PIN = 8
+
+    board = PinPong("uno","com4")
+    board.connect()
+
+    board.pin_mode(BUTTON_PIN, INPUT)
+    board.pin_mode(13, OUTPUT)
+    while True:
+        v = board.read_digital(BUTTON_PIN)
+        board.write_digital(13, v)
+        time.sleep(0.1)
+
+
+
+
+
+
+
+
+
+servo.py代码样例
+===========================================
+
+.. code-block:: python
+
+
+    import sys
+    import time
+    from pinpong.pinpong import *
+
+    SERVO_PIN = 4
+
+    board = PinPong("uno","com4")
+    board.connect()
+
+
+    board.pin_mode(SERVO_PIN, SERVO)
+    while True:
+        board.servo_write_angle(SERVO_PIN,0)
+        time.sleep(1)
+
+        board.servo_write_angle(SERVO_PIN,90)
+        time.sleep(1)
+
+        board.servo_write_angle(SERVO_PIN,180)
+        time.sleep(1)
+
+        board.servo_write_angle(SERVO_PIN,90)
+        time.sleep(1)
+    
