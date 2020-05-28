@@ -169,38 +169,42 @@
 <dl class="glossary simple">
 <dt id="term-Windows">Windows</dt><dd></dd>
 </dl>
-<ul class="simple">
-<li><p>1、安装python3，注意安装最后一步勾选add to path，官网下载地址： <a class="reference external" href="https://www.python.org/">点击打开</a></p></li>
-</ul>
+<p>1、安装python3, 注意安装最后一步勾选add to path，官网下载地址： <a class="reference external" href="https://www.python.org/">点击打开</a></p>
 <img alt="../_images/addpath.png" src="../_images/addpath.png" />
-<ul class="simple">
-<li><p>2、win+R快捷键，输入cmd，小黑窗中输入pip install pinpong即可安装。</p></li>
-<li><p>3、根据本文档类库部分代码编辑python代码</p></li>
-<li><p>4、连接arudino uno板</p></li>
-<li><p>5、代码中初始化部分改成uno，COM口从设备管理器查看</p></li>
-<li><p>6、代码编写完成直接运行即可</p></li>
-</ul>
+<p>2、win+R快捷键，输入cmd</p>
+<img alt="../_images/win_install1.jpg" src="../_images/win_install1.jpg" />
+<p>3、小黑窗中输入pip install pinpong即可安装。</p>
+<img alt="../_images/win_install3.jpg" src="../_images/win_install3.jpg" />
+<p>4、找到python库文件路径。运行python 3， import os, 可以把python库的路径打印出来。</p>
+<img alt="../_images/win_install4.jpg" src="../_images/win_install4.jpg" />
+<p>5、打开任意一个文件夹，将路径复制进去，找到../site-packages/pinpong/examples,可以找到pinpong的示例程序。</p>
+<img alt="../_images/win_install5.jpg" src="../_images/win_install5.jpg" />
 </div>
 <div class="section" id="linux">
 <h2><span class="section-number">1.2. </span>Linux 平台安装<a class="headerlink" href="#linux" title="Permalink to this headline">¶</a></h2>
 <dl class="glossary simple">
 <dt id="term-Linux">Linux</dt><dd></dd>
 </dl>
-<ul class="simple">
-<li><p>1、终端中输入pip3 install pinpong即可安装。</p></li>
-<li><p>3、根据本文档类库部分代码编辑python代码</p></li>
-<li><p>4、连接arudino uno板</p></li>
-<li><p>5、代码中初始化部分改成uno，COM口使用ls查看</p></li>
-<li><p>6、代码编写完成直接运行即可</p></li>
-</ul>
+<p>1、终端中输入sudo pip install pinpong即可安装。</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ sudo pip install pinpong
+</pre></div>
+</div>
+<img alt="../_images/linux_install1.png" src="../_images/linux_install1.png" />
+<p>2、找到python库的路径，最简单的方式，运行python3, import pinpong, 通过print(pinpong.__path__)打印出pinpong库的路径。</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pinpong</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">pinpong</span><span class="o">.</span><span class="n">__path__</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../_images/linux_install4.png" src="../_images/linux_install4.png" />
+<p>3、更改路径至pinpong的目录下的example中，可以看到示例程序都在这个文件夹。</p>
+<img alt="../_images/linux_install5.png" src="../_images/linux_install5.png" />
 </div>
 <div class="section" id="mac-os-x">
 <h2><span class="section-number">1.3. </span>Mac OS X 平台安装<a class="headerlink" href="#mac-os-x" title="Permalink to this headline">¶</a></h2>
 <dl class="glossary simple">
 <dt id="term-Mac-OS-X">Mac OS X</dt><dd></dd>
 </dl>
-<p>step 1
-启动用命令行，（打开任意finder窗口，键入Shift+Command+U）, 双击“终端”。
+<p>1、启动用命令行，（打开任意finder窗口，键入Shift+Command+U）, 双击“终端”。
 输入命令行，安装pinPong库</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ pip install pinpong
 </pre></div>
@@ -208,16 +212,13 @@
 <img alt="../_images/2.png" src="../_images/2.png" />
 <img alt="../_images/3.png" src="../_images/3.png" />
 <p>安装成功后，我们可以到pinpong的目录下，看一下示例代码。</p>
-<p>step 2
-找到python库的路径，最简单的方式，运行python, import system, 通过print(sys.path)打印出python库的路径。</p>
-<p>step 3
-更改路径至pinpong的目录下，</p>
+<p>2、找到python库的路径，最简单的方式，运行python, import system, 通过print(sys.path)打印出python库的路径。</p>
+<p>3、更改路径至pinpong的目录下，</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ <span class="nb">cd</span> /..../python3.7/site-packages/pinpong
 </pre></div>
 </div>
 <img alt="../_images/3.png" src="../_images/3.png" />
-<p>step 4
-列出目录下的文件，ls,我们可以看到有个examples文件夹，示例代码就在这个文件夹中。</p>
+<p>4、列出目录下的文件，ls,我们可以看到有个examples文件夹，示例代码就在这个文件夹中。</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ <span class="nb">cd</span> example
 $ ls
 </pre></div>
