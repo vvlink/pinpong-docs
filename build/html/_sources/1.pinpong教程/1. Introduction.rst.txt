@@ -1,5 +1,0 @@
-========
-Introduction
-========
-pinPong库是基于Firmata通信协议开发，用于PC和MCU通信。
-

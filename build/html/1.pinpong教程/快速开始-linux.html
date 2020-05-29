@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>1. 简介 &mdash; pinpong 0.1 documentation</title>
+  <title>2. Linux平台 &mdash; pinpong 0.1 documentation</title>
   
 
   
@@ -35,8 +35,8 @@
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="安装教程" href="../1.pinpong教程/index.html" />
-    <link rel="prev" title="欢迎访问 pinpong 教程文档!" href="../index.html" /> 
+    <link rel="next" title="3. Mac OS X 平台" href="快速开始-mac.html" />
+    <link rel="prev" title="1. Windows平台" href="快速开始-win.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -81,13 +81,18 @@
             
             
               <p class="caption"><span class="caption-text">pinpong资料</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">1. 简介</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../0.pinpong资料/简介.html">1. 简介</a></li>
 </ul>
 <p class="caption"><span class="caption-text">pinpong教程</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../1.pinpong教程/index.html">安装教程</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../1.pinpong教程/index.html#id2">快速开始</a></li>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="index.html">安装教程</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html#id2">快速开始</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="快速开始-win.html">1. Windows平台</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">2. Linux平台</a></li>
+<li class="toctree-l2"><a class="reference internal" href="快速开始-mac.html">3. Mac OS X 平台</a></li>
+</ul>
+</li>
 </ul>
 <p class="caption"><span class="caption-text">pinpong语法</span></p>
 <ul>
@@ -149,13 +154,15 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
-      <li><span class="section-number">1. </span>简介</li>
+          <li><a href="index.html">安装教程</a> &raquo;</li>
+        
+      <li><span class="section-number">2. </span>Linux平台</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../_sources/0.pinpong资料/简介.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/1.pinpong教程/快速开始-linux.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -168,9 +175,21 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="id1">
-<h1><span class="section-number">1. </span>简介<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<p>pinPong库是基于Firmata通信协议开发，用于PC和MCU通信。</p>
+  <div class="section" id="linux">
+<h1><span class="section-number">2. </span>Linux平台<a class="headerlink" href="#linux" title="Permalink to this headline">¶</a></h1>
+<dl class="glossary simple">
+<dt id="term-Linux">Linux</dt><dd></dd>
+</dl>
+<p>1、打开终端，Ctrl+Alt+T，并连接上UNO板，在终端中输入，</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ ls /dev/ttyACM*
+</pre></div>
+</div>
+<p>2、输入上述命令后，会出现设备的端口号，记录下来</p>
+<img alt="../_images/linux_quickstart1.png" src="../_images/linux_quickstart1.png" />
+<p>3、找到示例代码，我们已blink.py为例，修改主控板名称为uno和端口号为ttyACM0。修改后保存</p>
+<img alt="../_images/linux_quickstart3.png" src="../_images/linux_quickstart3.png" />
+<p>4、运行blink.py，uno板开始闪烁，运行成功</p>
+<img alt="../_images/linux_quickstart4.png" src="../_images/linux_quickstart4.png" />
 </div>
 
 
@@ -181,10 +200,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../1.pinpong教程/index.html" class="btn btn-neutral float-right" title="安装教程" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="快速开始-mac.html" class="btn btn-neutral float-right" title="3. Mac OS X 平台" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../index.html" class="btn btn-neutral float-left" title="欢迎访问 pinpong 教程文档!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="快速开始-win.html" class="btn btn-neutral float-left" title="1. Windows平台" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

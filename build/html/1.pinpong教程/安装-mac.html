@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>1. 简介 &mdash; pinpong 0.1 documentation</title>
+  <title>3. Mac OS X 平台安装 &mdash; pinpong 0.1 documentation</title>
   
 
   
@@ -35,8 +35,8 @@
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="安装教程" href="../1.pinpong教程/index.html" />
-    <link rel="prev" title="欢迎访问 pinpong 教程文档!" href="../index.html" /> 
+    <link rel="next" title="4. 版本更新" href="安装-更新.html" />
+    <link rel="prev" title="2. Linux 平台安装" href="安装-linux.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -81,13 +81,19 @@
             
             
               <p class="caption"><span class="caption-text">pinpong资料</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">1. 简介</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../0.pinpong资料/简介.html">1. 简介</a></li>
 </ul>
 <p class="caption"><span class="caption-text">pinpong教程</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../1.pinpong教程/index.html">安装教程</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../1.pinpong教程/index.html#id2">快速开始</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">安装教程</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="安装-win.html">1. Windows平台安装</a></li>
+<li class="toctree-l2"><a class="reference internal" href="安装-linux.html">2. Linux 平台安装</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">3. Mac OS X 平台安装</a></li>
+<li class="toctree-l2"><a class="reference internal" href="安装-更新.html">4. 版本更新</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#id2">快速开始</a></li>
 </ul>
 <p class="caption"><span class="caption-text">pinpong语法</span></p>
 <ul>
@@ -149,13 +155,15 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
-      <li><span class="section-number">1. </span>简介</li>
+          <li><a href="index.html">安装教程</a> &raquo;</li>
+        
+      <li><span class="section-number">3. </span>Mac OS X 平台安装</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../_sources/0.pinpong资料/简介.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/1.pinpong教程/安装-mac.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -168,9 +176,31 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="id1">
-<h1><span class="section-number">1. </span>简介<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<p>pinPong库是基于Firmata通信协议开发，用于PC和MCU通信。</p>
+  <div class="section" id="mac-os-x">
+<h1><span class="section-number">3. </span>Mac OS X 平台安装<a class="headerlink" href="#mac-os-x" title="Permalink to this headline">¶</a></h1>
+<dl class="glossary simple">
+<dt id="term-Mac-OS-X">Mac OS X</dt><dd></dd>
+</dl>
+<p>1、启动用命令行，（打开任意finder窗口，键入Shift+Command+U）, 双击“终端”。
+输入命令行，安装pinPong库</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ pip install pinpong
+</pre></div>
+</div>
+<img alt="../_images/2.png" src="../_images/2.png" />
+<img alt="../_images/3.png" src="../_images/3.png" />
+<p>安装成功后，我们可以到pinpong的目录下，看一下示例代码。</p>
+<p>2、找到python库的路径，最简单的方式，运行python, import system, 通过print(sys.path)打印出python库的路径。</p>
+<p>3、更改路径至pinpong的目录下，</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ <span class="nb">cd</span> /..../python3.7/site-packages/pinpong
+</pre></div>
+</div>
+<img alt="../_images/3.png" src="../_images/3.png" />
+<p>4、列出目录下的文件，ls,我们可以看到有个examples文件夹，示例代码就在这个文件夹中。</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ <span class="nb">cd</span> example
+$ ls
+</pre></div>
+</div>
+<img alt="../_images/4.png" src="../_images/4.png" />
 </div>
 
 
@@ -181,10 +211,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../1.pinpong教程/index.html" class="btn btn-neutral float-right" title="安装教程" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="安装-更新.html" class="btn btn-neutral float-right" title="4. 版本更新" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../index.html" class="btn btn-neutral float-left" title="欢迎访问 pinpong 教程文档!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="安装-linux.html" class="btn btn-neutral float-left" title="2. Linux 平台安装" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
