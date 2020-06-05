@@ -87,13 +87,13 @@
 <p class="caption"><span class="caption-text">pinpong教程</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">安装教程</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Windows平台安装</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Windows平台安装</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">快速开始</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="安装-linux.html">Linux 平台安装</a></li>
 <li class="toctree-l2"><a class="reference internal" href="安装-mac.html">Mac OS X 平台安装</a></li>
 <li class="toctree-l2"><a class="reference internal" href="安装-更新.html">更新pinpong库</a></li>
-<li class="toctree-l2"><a class="reference internal" href="快速开始-win.html">Windows平台</a></li>
-<li class="toctree-l2"><a class="reference internal" href="快速开始-mac.html">Mac OS X 平台</a></li>
-<li class="toctree-l2"><a class="reference internal" href="快速开始-linux.html">Linux平台</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../入门教程/index.html">入门教程</a></li>
@@ -208,6 +208,19 @@
 <img alt="../../_images/win_install4.jpg" src="../../_images/win_install4.jpg" />
 <p>5、打开任意一个文件夹，将路径复制进去，找到../site-packages/pinpong/examples,可以找到pinpong的示例程序。</p>
 <img alt="../../_images/win_install5.jpg" src="../../_images/win_install5.jpg" />
+<div class="section" id="id2">
+<h2>快速开始<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>1、 连接arudino uno板,按windows键，在搜索菜单中输入“device manager”, 打开设备管理器（device manager）。</p>
+<img alt="../../_images/win_quickstart1.jpg" src="../../_images/win_quickstart1.jpg" />
+<p>在端口（port）中,可以找到Uno板的端口号，并记录下来。</p>
+<img alt="../../_images/win_quickstart2.jpg" src="../../_images/win_quickstart2.jpg" />
+<p>2、 我们以blink.py为例,用VS Code打开blink.py（或者其他编辑器）。
+将board中的参数，leonardo修改为uno，端口号修改为刚刚记录的端口号，com26。修改后保存。</p>
+<img alt="../../_images/win_quickstart3.jpg" src="../../_images/win_quickstart3.jpg" />
+<p>3、 在小黑窗中，更改路径至pinpong示例，用python3 运行。
+Uno板载LED开始闪烁，运行成功。</p>
+<img alt="../../_images/win_quickstart4.jpg" src="../../_images/win_quickstart4.jpg" />
+</div>
 </div>
 
 
