@@ -1,0 +1,16 @@
+==============
+更新pinpong库
+==============
+
+pinpong目前处于快速更新迭代中，因此会不定期进行更新，通过如下命令可以进行版本更新：
+
+.. code-block:: bash
+
+        $ pip install -U pinpong 
+
+如果源替换为了国内的源，获取最新版本的方法：
+
+.. code-block:: bash
+
+        $ pip install -U pinpong -i  https://pypi.Python.org/simple/
+
